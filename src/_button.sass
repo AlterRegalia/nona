@@ -1,0 +1,36 @@
+.button,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit']
+    background-color: $primary
+    border: 0.1rem solid $primary
+    color: $base
+    cursor: pointer
+    display: inline-block
+    font-size: inherit
+    padding: 0.4rem 0.8rem
+    text-align: center
+    white-space: nowrap
+
+    &:focus,
+    &:hover,
+        background-color: $primary-accent
+        border-color: $primary-accent
+        color: $base
+    
+    &[disabled]
+        cursor: default
+        opacity: 0.4
+
+    &.button-round
+        border-radius: 2.0rem
+        
+    &.button-clear
+        background-color: transparent
+        border-color: transparent
+        color: $primary
+
+        &:focus,
+        &:hover
+            color: $primary-accent

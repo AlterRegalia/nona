@@ -1,0 +1,87 @@
+// Grid System base on flex-box
+// 1 Universal Column
+// 6 Predefined column size
+
+.container
+    margin: 0 auto
+    position: relative
+    width: 64%
+
+    &.fluid
+        width: 100%
+
+.row
+    display: flex
+    flex-flow: row nowrap
+
+    //Turns row direction into column
+    //when the screen width doesnt exceed 36.0rem
+    &.mobile
+        flex-direction: column
+
+    &.content-start
+        justify-content: flex-start
+    
+    &.content-end
+        justify-content:  flex-end
+    
+    &.content-center
+        justify-content:  center
+    
+    &.content-between
+        justify-content: space-between
+
+    &.content-around
+        justify-content: space-around
+
+    &.align-start
+        align-items: flex-start
+    
+    &.align-end
+        align-items: flex-end
+
+    &.align-center
+        align-items: center
+    
+    &.align-baseline
+        align-items: baseline
+    
+    &.align-stretch
+        align-items: stretch
+
+    .column
+        flex: 1 1 auto
+        flex-direction: column
+        max-width: 100%
+        padding: 0.2rem
+
+        &.column-25
+            flex: 0 0 25%
+            max-width: 25%
+        
+        &.column-33,
+        &.column-34
+            flex: 0 0 33.3333%
+            max-width: 33.3333%
+        
+        &.column-50
+            flex: 0 0 50%
+            max-width: 50%
+        
+        &.column-66,
+        &.column-67
+            flex: 0 0 66.6666%
+            max-width: 66.6666%
+
+        &.column-75
+            flex: 0 0 75%
+            max-width: 75%
+        
+        &.column-100
+            flex: 0 0 100%
+            max-width: 100%
+
+@media  (min-width: 36.0em)
+	.row
+		&.mobile
+			flex-direction: row

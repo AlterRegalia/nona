@@ -1,0 +1,23 @@
+{
+  "name": "nona.css",
+  "version": "0.1.0",
+  "description": "CSS Framework With Simplicity In Mind",
+  "repository": "https://github.com/AlterRegalia/nona.git",
+  "author": "AlterRegalia <ariiq.dio.f@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-nano",
+    "build-autoprefix": "postcss ./css/nona.css -u autoprefixer -m -o ./css/nona.css",
+    "build-clean": "rimraf css",
+    "build-nano": "postcss ./css/nona.css -u cssnano -m -o ./css/nona.min.css",
+    "build-sass": "node-sass ./src --output-style expanded -o ./css",
+    "start": "npm run build-sass -- --watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.5.0",
+    "cssnano": "^3.10.0",
+    "node-sass": "^4.9.0",
+    "postcss-cli": "^5.0.0",
+    "rimraf": "^2.6.2"
+  }
+}
