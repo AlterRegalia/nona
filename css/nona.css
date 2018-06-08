@@ -1,4 +1,4 @@
-/*! Nona | CSS Framework With Simplicity In Mind - 0.1.0 */
+/*! Nona | CSS Framework With Simplicity In Mind - 0.2.0 */
 html {
   box-sizing: border-box;
   font-size: 20px;
@@ -41,7 +41,7 @@ input[type='button'],
 input[type='reset'],
 input[type='submit'] {
   background-color: #39AF6B;
-  border: 0.1rem solid #39AF6B;
+  border: none;
   color: #fefefe;
   cursor: pointer;
   display: inline-block;
@@ -61,7 +61,6 @@ input[type='reset']:hover,
 input[type='submit']:focus,
 input[type='submit']:hover {
   background-color: #6bc390;
-  border-color: #6bc390;
   color: #fefefe;
 }
 
@@ -79,7 +78,7 @@ button.button-round,
 input[type='button'].button-round,
 input[type='reset'].button-round,
 input[type='submit'].button-round {
-  border-radius: 2.0rem;
+  border-radius: 1rem;
 }
 
 .button.button-clear,
@@ -183,6 +182,14 @@ input:not([type]).input-rounded,
 textarea.input-rounded,
 select.input-rounded {
   border-radius: 1rem;
+}
+
+select {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="32"> <path fill="none" stroke="%23666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 14l7 7 7-7"/> </svg>') center right no-repeat;
+}
+
+select:focus {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="32"> <path fill="none" stroke="%23666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 17h16"/> </svg>') center right no-repeat;
 }
 
 textarea {
@@ -410,7 +417,7 @@ th {
 
 td,
 th {
-  border-bottom: 0.1em solid #ecf0f1;
+  border-bottom: 0.1rem solid #ecf0f1;
   padding: 1.0rem 1.4rem;
   text-align: left;
 }
@@ -426,7 +433,7 @@ th:last-child {
 }
 
 .table-accent th {
-  color: #39AF6B;
+  color: #4d4d4d;
 }
 
 .table-accent td,

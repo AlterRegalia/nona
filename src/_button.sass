@@ -3,8 +3,8 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit']
-    background-color: $primary
-    border: 0.1rem solid $primary
+    background-color: $button-color
+    border: none
     color: $base
     cursor: pointer
     display: inline-block
@@ -15,8 +15,7 @@ input[type='submit']
 
     &:focus,
     &:hover,
-        background-color: $primary-accent
-        border-color: $primary-accent
+        background-color: $button-hover
         color: $base
     
     &[disabled]
@@ -24,13 +23,13 @@ input[type='submit']
         opacity: 0.4
 
     &.button-round
-        border-radius: 2.0rem
+        border-radius: $button-rounded-radius
         
     &.button-clear
         background-color: transparent
         border-color: transparent
-        color: $primary
+        color: $button-color
 
         &:focus,
         &:hover
-            color: $primary-accent
+            color: $button-hover

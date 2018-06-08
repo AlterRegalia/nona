@@ -16,7 +16,7 @@ textarea,
 select 
     appearance: none
     background-color: transparent
-    border: 0.1rem solid $base-accent
+    border: $form-border
     box-shadow: none
     box-sizing: inherit
     font-family: inherit
@@ -25,11 +25,18 @@ select
     width: 100%
 
     &:focus
-        border-color: $primary
+        border-color: $form-border-focus-color
         outline: 0
 
     &.input-rounded
-        border-radius: 1rem
+        border-radius: $form-rounded-radius
+
+select
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="32"> <path fill="none" stroke="%23666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 14l7 7 7-7"/> </svg>')center right no-repeat
+
+    &:focus
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="32"> <path fill="none" stroke="%23666" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 17h16"/> </svg>') center right no-repeat
+
 
 textarea
     min-height: 5.2rem
