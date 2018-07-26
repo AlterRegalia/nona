@@ -497,12 +497,9 @@ h6 {
   text-align: right;
 }
 
-@media (max-width: 36rem) {
+@media (max-width: 62rem) {
   .container {
-    width: 96%;
-  }
-  .row.mobile {
-    flex-direction: row;
+    width: 72%;
   }
 }
 
@@ -512,9 +509,12 @@ h6 {
   }
 }
 
-@media (max-width: 62rem) {
+@media (max-width: 36rem) {
   .container {
-    width: 72%;
+    width: 96%;
+  }
+  .row.mobile {
+    flex-direction: row;
   }
 }
 
