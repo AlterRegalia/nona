@@ -1,4 +1,4 @@
-/*! Nona | CSS Framework With Simplicity In Mind - 0.2.0 */
+/*! Nona - Simplified CSS Framework - 0.3.0 */
 html {
   box-sizing: border-box;
   font-size: 20px;
@@ -7,10 +7,10 @@ html {
 body {
   background-color: #fefefe;
   color: #4d4d4d;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   letter-spacing: .01rem;
-  line-height: 1.0rem;
+  line-height: 1;
 }
 
 html,
@@ -315,12 +315,6 @@ input[type='radio'] {
   max-width: 100%;
 }
 
-@media (min-width: 36em) {
-  .row.mobile {
-    flex-direction: row;
-  }
-}
-
 .hero {
   display: flex;
   flex-flow: column;
@@ -333,10 +327,6 @@ input[type='radio'] {
 
 .hero.hero-75 {
   height: 75vh;
-}
-
-.hero .content {
-  text-align: center;
 }
 
 hr {
@@ -447,9 +437,9 @@ h3,
 h4,
 h5,
 h6 {
+  font-weight: 400;
   letter-spacing: -0.1rem;
-  font-weight: 300;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.6rem;
   margin-top: 0;
 }
 
@@ -507,30 +497,24 @@ h6 {
   text-align: right;
 }
 
-@media (max-width: 36em) {
-  html {
-    font-size: 14px;
-  }
+@media (max-width: 36rem) {
   .container {
-    width: 98%;
+    width: 96%;
+  }
+  .row.mobile {
+    flex-direction: row;
   }
 }
 
-@media (max-width: 48em) {
-  html {
-    font-size: 16px;
-  }
+@media (max-width: 48rem) {
   .container {
-    width: 92%;
+    width: 84%;
   }
 }
 
-@media (max-width: 62em) {
-  html {
-    font-size: 18px;
-  }
+@media (max-width: 62rem) {
   .container {
-    width: 86%;
+    width: 72%;
   }
 }
 

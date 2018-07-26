@@ -1,2 +1,2 @@
 # nona
-🍑 CSS Framework With Simplicity In Mind
+🍑 Simplified CSS Framework
