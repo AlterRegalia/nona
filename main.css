@@ -1,13 +1,13 @@
 .navbar{
     top: 0;
-    right: 0;
+    left: 0;
     position: fixed;
-    box-shadow: 1px 1px 4px rgba(51,51,51,0.2);
     z-index: 1001;
     background-color: #ecf0f1;
     justify-content: space-around;
 }
 
 .banner{
-    background-color: #6bc390;
+    text-align: center;
+    background-color: #ecf0f1;
 }
