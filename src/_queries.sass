@@ -1,3 +1,11 @@
+@include displayIs(large)
+	.container
+		width: 72%
+
+@include displayIs(medium)
+	.container
+		width: 84%
+
 @include displayIs(small)
 	.container
 		width: 96%
@@ -5,11 +13,3 @@
 	.row
 		&.mobile
 			flex-direction: row
-
-@include displayIs(medium)
-	.container
-		width: 84%
-
-@include displayIs(large)
-	.container
-		width: 72%
