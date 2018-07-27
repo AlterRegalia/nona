@@ -1,7 +1,7 @@
 .container
     margin: 0 auto
     position: relative
-    width: 64%
+    width: 60%
 
     &.fluid
         width: 100%
@@ -74,3 +74,8 @@
         &.column-100
             flex: 0 0 100%
             max-width: 100%
+
+@media ( min-width: 36.0em )
+	.row
+		&.mobile
+			flex-direction: row

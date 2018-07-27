@@ -1,4 +1,4 @@
-/*! Nona - Simplified CSS Framework - 0.3.0 */
+/*! Nona - Simplified CSS Framework - 0.3.1 */
 html {
   box-sizing: border-box;
   font-size: 20px;
@@ -10,7 +10,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   letter-spacing: .01rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 
 html,
@@ -222,7 +222,7 @@ input[type='radio'] {
 .container {
   margin: 0 auto;
   position: relative;
-  width: 64%;
+  width: 60%;
 }
 
 .container.fluid {
@@ -315,6 +315,12 @@ input[type='radio'] {
   max-width: 100%;
 }
 
+@media (min-width: 36em) {
+  .row.mobile {
+    flex-direction: row;
+  }
+}
+
 .hero {
   display: flex;
   flex-flow: column;
@@ -374,7 +380,11 @@ ul {
   list-style: circle inside;
 }
 
-img {
+embed,
+iframe,
+img,
+object,
+video {
   max-width: 100%;
 }
 
@@ -512,9 +522,6 @@ h6 {
 @media (max-width: 36rem) {
   .container {
     width: 96%;
-  }
-  .row.mobile {
-    flex-direction: row;
   }
 }
 
