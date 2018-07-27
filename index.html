@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>🌱Nona.css - Homegrown CSS Framework</title>
+    <title>🌱Nona.css - Simplified CSS Framework</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#39AF6B">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/5.0.0/sanitize.min.css">
-    <link rel="stylesheet" href="0.3.0/nona.css">
+    <link rel="stylesheet" href="0.3.1/nona.css">
     <link rel="stylesheet" href="main.css" />
 </head>
 <body>
     <section class="menu">
         <nav class="navbar">
             <div class="right">
-                <a href="/"><img src="nona-logo.svg" alt="🌱Nona"></a>
+                <a href="/"><img src="nona-logo.svg" alt="Nona.css"></a>
             </div>
             <div class="left">
                 <a class="button" href="https://github.com/AlterRegalia/nona" target="_blank"><i class="fab fa-github"></i> Github</a>
@@ -39,7 +39,7 @@
                 <div class="column">
                     <span class="text-accent">Clone</span>
                     <pre>   
-  git clone <span class="text-accent">https://github.com/AlterRegalia/nona.git</span>
+  git clone <span class="text-accent">https://github.com/AlterRegalia/nona.git</span>   
                     </pre>
                 </div>
             </div>
@@ -47,7 +47,7 @@
                 <div class="column">
                     <span class="text-accent">Installation</span>
                     <pre>   
-  &lt;link rel="stylesheet" href="path-to/<a href="#">nona.css</a>"&gt;
+  &lt;link rel="stylesheet" href="path-to/<a href="#">nona.css</a>"&gt; 
                     </pre>
                 </div>
             </div>
@@ -83,6 +83,101 @@
             <div class="row">
                 <div class="column">
                     <span class="text-accent">Grid System</span>
+                    <br />
+                    <span>Flexible Column</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column show">column</div>
+            </div>
+            <div class="row">
+                <div class="column show">column</div>
+                <div class="column show">column</div>
+            </div>
+            <div class="row mobile">
+                <div class="column show">column</div>
+                <div class="column show">column</div>
+                <div class="column show">column</div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <pre>   
+  &lt;div class="<span class="text-accent">row</span>"&gt;
+    &lt;div class="<span class="text-accent">column</span>"&gt;
+        <em>column</em>
+    &lt;/div&gt;    
+  &lt;/div&gt;
+
+  &lt;div class="<span class="text-accent">row</span>"&gt;
+    &lt;div class="<span class="text-accent">column</span>"&gt;
+        <em>column</em>
+    &lt;/div&gt;    
+    &lt;div class="<span class="text-accent">column</span>"&gt;
+        <em>column</em>
+    &lt;/div&gt;    
+  &lt;/div&gt;    
+  
+  &lt;div class="<span class="text-accent">row</span>"&gt;
+    &lt;div class="<span class="text-accent">column</span>"&gt;
+        <em>column</em>
+    &lt;/div&gt;    
+    &lt;div class="<span class="text-accent">column</span>"&gt;
+        <em>column</em>
+    &lt;/div&gt;    
+    &lt;div class="<span class="text-accent">column</span>"&gt;
+        <em>column</em>
+    &lt;/div&gt;    
+  &lt;/div&gt;    
+                    </pre>
+                </div>
+            </div>
+            
+            <hr />
+            <div class="row">
+                <div class="column">
+                    <span>Predefined Columns</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column column-25 show">column-25</div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <pre>   
+    &lt;div class="<span class="text-accent">row</span>"&gt;
+        &lt;div class="<span class="text-accent">column column-25</span>"&gt;
+            <em>column-25</em>
+        &lt;/div&gt;    
+    &lt;/div&gt;
+                    </pre>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column column-33 show">column-33</div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <pre>   
+    &lt;div class="<span class="text-accent">row</span>"&gt;
+        &lt;div class="<span class="text-accent">column column-33</span>"&gt;
+            <em>column-33</em>
+        &lt;/div&gt;    
+    &lt;/div&gt;
+                    </pre>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column column-50 show">column-50</div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <pre>   
+    &lt;div class="<span class="text-accent">row</span>"&gt;
+        &lt;div class="<span class="text-accent">column column-50</span>"&gt;
+            <em>column-50</em>
+        &lt;/div&gt;    
+    &lt;/div&gt;
+                    </pre>
                 </div>
             </div>
         </div>

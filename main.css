@@ -5,9 +5,16 @@
     z-index: 1001;
     background-color: #ecf0f1;
     justify-content: space-around;
+    padding: 0.2rem;
 }
 
 .banner{
     text-align: center;
     background-color: #ecf0f1;
+}
+
+.row .show {
+    background-color: #ecf0f1;
+    margin: 0.1rem;
+    padding: 1rem;
 }
