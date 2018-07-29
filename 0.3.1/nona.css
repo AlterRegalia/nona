@@ -49,10 +49,6 @@ input[type='submit'] {
   padding: 0.4rem 0.8rem;
   text-align: center;
   white-space: nowrap;
-  background-color: transparent;
-  border: 0.1rem solid;
-  border-color: #39AF6B;
-  color: #39AF6B;
 }
 
 .button:focus, .button:hover,
@@ -85,15 +81,26 @@ input[type='submit'].button-round {
   border-radius: 1rem;
 }
 
-.button:focus, .button:hover,
-button:focus,
-button:hover,
-input[type='button']:focus,
-input[type='button']:hover,
-input[type='reset']:focus,
-input[type='reset']:hover,
-input[type='submit']:focus,
-input[type='submit']:hover {
+.button.button-outline,
+button.button-outline,
+input[type='button'].button-outline,
+input[type='reset'].button-outline,
+input[type='submit'].button-outline {
+  background-color: transparent;
+  border: 0.1rem solid;
+  border-color: #39AF6B;
+  color: #39AF6B;
+}
+
+.button.button-outline:focus, .button.button-outline:hover,
+button.button-outline:focus,
+button.button-outline:hover,
+input[type='button'].button-outline:focus,
+input[type='button'].button-outline:hover,
+input[type='reset'].button-outline:focus,
+input[type='reset'].button-outline:hover,
+input[type='submit'].button-outline:focus,
+input[type='submit'].button-outline:hover {
   background-color: #39AF6B;
   color: #fefefe;
 }
