@@ -79,6 +79,7 @@ input[type='button'].button-round,
 input[type='reset'].button-round,
 input[type='submit'].button-round {
   border-radius: 1rem;
+  border-color: #39AF6B;
 }
 
 .button.button-outline,
