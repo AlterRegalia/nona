@@ -10,7 +10,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   letter-spacing: .01rem;
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
 html,
@@ -41,7 +41,7 @@ input[type='button'],
 input[type='reset'],
 input[type='submit'] {
   background-color: #39AF6B;
-  border: none;
+  border: 0.1rem solid;
   color: #fefefe;
   cursor: pointer;
   display: inline-block;
@@ -87,7 +87,6 @@ input[type='button'].button-outline,
 input[type='reset'].button-outline,
 input[type='submit'].button-outline {
   background-color: transparent;
-  border: 0.1rem solid;
   border-color: #39AF6B;
   color: #39AF6B;
 }
@@ -255,7 +254,7 @@ input[type='radio'] {
 
 .row {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
 }
 
 .row.mobile {
