@@ -5,6 +5,7 @@ input[type='reset'],
 input[type='submit']
     background-color: $button-color
     border: 0.1rem solid
+    border-color: $button-color
     color: $base
     cursor: pointer
     display: inline-block
@@ -24,11 +25,9 @@ input[type='submit']
 
     &.button-round
         border-radius: $button-rounded-radius
-        border-color: $button-color
 
     &.button-outline
         background-color: transparent
-        border-color: $button-color
         color: $button-color
 
         &:focus,
