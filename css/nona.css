@@ -62,6 +62,7 @@ input[type='reset']:hover,
 input[type='submit']:focus,
 input[type='submit']:hover {
   background-color: #6bc390;
+  border-color: #6bc390;
   color: #fefefe;
 }
 
