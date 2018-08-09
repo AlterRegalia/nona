@@ -42,6 +42,7 @@ input[type='reset'],
 input[type='submit'] {
   background-color: #39AF6B;
   border: 0.1rem solid;
+  border-color: #39AF6B;
   color: #fefefe;
   cursor: pointer;
   display: inline-block;
@@ -79,7 +80,6 @@ input[type='button'].button-round,
 input[type='reset'].button-round,
 input[type='submit'].button-round {
   border-radius: 1rem;
-  border-color: #39AF6B;
 }
 
 .button.button-outline,
@@ -88,7 +88,6 @@ input[type='button'].button-outline,
 input[type='reset'].button-outline,
 input[type='submit'].button-outline {
   background-color: transparent;
-  border-color: #39AF6B;
   color: #39AF6B;
 }
 
